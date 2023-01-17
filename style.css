@@ -63,8 +63,8 @@ nav ul li a {
   transform: translate(-50%,30%);
   color: white;
   background-color: black;
-  border-radius: 5px;
-  border: 5px black;
+  box-sizing: border-box;
+  padding: 2%;
 }
 
 .hero-text h1{
@@ -75,6 +75,9 @@ nav ul li a {
     font-size: 20px;
 }
 
+.audio{
+    display: none;
+}
 
 /* FOOTER */
 footer {
@@ -90,6 +93,12 @@ footer {
     padding: 0;
     margin-bottom: 0;
   }  
+
+  /* Help from Keily */
+  .media{
+    padding-left:40px;
+    padding-right: 40px;
+  }
   
 
 
