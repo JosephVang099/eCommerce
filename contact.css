@@ -51,7 +51,61 @@ nav ul li a {
 
 
 
+.container {
+    width: 50%;
+    height: 30%;
+    background: #fff;
+    margin: 5% auto;
+    box-sizing: border-box;
+    padding: 2%;
+}
 
+.container p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 3%;
+    color: black;
+}
+
+.input, .msg .area {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    border: 2px soild black;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.login .input{
+    width: 48%;
+   float: left;
+   margin-right: 4%; 
+}
+
+.login .input:last-child {
+    margin-right: 0;
+}
+
+.msg .area {
+    height: 20%;
+}
+
+.btn {
+    width: 25%;
+    background: #486255;
+    height: 10%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 
 
@@ -63,4 +117,66 @@ footer {
     justify-content: center;
     bottom:0;
     width: auto;
+    position: relative;
   } 
+
+
+
+  /*Mobile Resppnsiveness*/
+@media screen and (max-width: 400px){
+    .container {
+        width: 60%;
+        height: 30%;
+        background: #fff;
+        margin: 5% auto;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+    
+    .container p{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 3%;
+        color: black;
+    }
+    
+    .input, .msg .area {
+        width: 100%;
+        padding: 2%;
+        box-sizing: border-box;
+        margin-bottom: 2%;
+        border: 2px soild black;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.5s ease;
+    }
+    
+    .login .input{
+        width: 48%;
+       float: left;
+       margin-right: 4%; 
+    }
+    
+    .login .input:last-child {
+        margin-right: 0;
+    }
+    
+    .msg .area {
+        height: 20%;
+    }
+    
+    .btn {
+        width: 100%;
+        background: #486255;
+        height: 10%;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 auto;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+};
