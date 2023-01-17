@@ -107,18 +107,33 @@ nav ul li a {
     border-radius: 5px;
 }
 
+.audio{
+    display: none;
+}
+
 
 
 /*FOOTER*/
 
-/*social media links*/
 footer {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* position: absolute; */
     justify-content: center;
-    bottom:0;
+    bottom: 0;
     width: auto;
-    position: relative;
-  } 
+    margin-top: 250px;
+    opacity:0.85;
+    padding: 0;
+    margin-bottom: 0;
+  }  
+
+  /* Help from Keily */
+  .media{
+    padding-left:40px;
+    padding-right: 40px;
+  }
 
 
 
