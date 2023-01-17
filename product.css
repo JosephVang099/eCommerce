@@ -91,7 +91,6 @@ button{
     background-color: black;
     padding: 10%;
     padding-bottom: 0;
-    box-shadow: red;
 }
 
 .item h1 {
@@ -107,15 +106,31 @@ button{
     font-size: 30px;
 }
 
+.audio{
+    display: none;
+}
+
 /*FOOTER*/
 
-/*social media links*/
 footer {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* position: absolute; */
     justify-content: center;
-    bottom:0;
+    bottom: 0;
     width: auto;
-  } 
+    /* margin-top: 250px; */
+    opacity:0.85;
+    padding: 0;
+    margin-bottom: 0;
+  }  
+
+/* Help from Keily */
+  .media{
+    padding-left:40px;
+    padding-right: 40px;
+  }
 
   
 @media screen and (max-width: 400px){
