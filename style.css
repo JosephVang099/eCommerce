@@ -6,7 +6,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   background-attachment: fixed;
 }
 
@@ -49,7 +48,7 @@ nav ul li a {
 }
 
 .slideshow{
-    padding-left: 10%;
+    /* padding-left: 5%; */
     padding-top: 10%;
 }
 
@@ -57,11 +56,15 @@ nav ul li a {
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
-  position: absolute;
-  left: 50%;
+  /* This cause the footer not to be on the botton */
+  /* position: absolute;
+  left: 50%; */ 
+  margin-left: 50%;
   transform: translate(-50%,30%);
   color: white;
   background-color: black;
+  border-radius: 5px;
+  border: 5px black;
 }
 
 .hero-text h1{
@@ -73,17 +76,22 @@ nav ul li a {
 }
 
 
-/*FOOTER*/
-.footer {
+/* FOOTER */
+footer {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* position: absolute; */
     justify-content: center;
     bottom: 0;
     width: auto;
-    padding-top: ;
+    margin-top: 250px;
     opacity:0.85;
     padding: 0;
-    margin: 0;
+    margin-bottom: 0;
   }  
+  
+
 
   /* footer {
     display: inline-flex;
@@ -94,3 +102,22 @@ nav ul li a {
     width: 100%;
     height: 60px;
   } */
+
+  @media screen and (max-width: 400px){
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        transform: translate(-50%,30%);
+        color: white;
+        background-color: black;
+      }
+      
+      .hero-text h1{
+          font-size: 60px;
+      }
+      
+      .hero-text h3{
+          font-size: 20px;
+      }
+  };
