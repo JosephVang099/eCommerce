@@ -58,7 +58,7 @@ nav ul li a {
 .slideshow{
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: 2%; */
+    margin-left: 10%;
     background-color: black;
     justify-content: center;
 }
